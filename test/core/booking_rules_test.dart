@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:trainly/core/booking_rules.dart';
+import 'package:stride/core/booking_rules.dart';
 
 void main() {
   group('BookingRules', () {

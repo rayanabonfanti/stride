@@ -54,7 +54,7 @@ void main() async {
       debugPrint('Erro ao inicializar Supabase: $e');
     }
 
-    runApp(const TrainlyApp());
+    runApp(const StrideApp());
   }, (error, stack) {
     // Erro não capturado - mostra app com erro
     _initError = 'Erro Fatal: $error\n\nStack: $stack';
@@ -119,14 +119,14 @@ class ErrorApp extends StatelessWidget {
   }
 }
 
-class TrainlyApp extends StatefulWidget {
-  const TrainlyApp({super.key});
+class StrideApp extends StatefulWidget {
+  const StrideApp({super.key});
 
   @override
-  State<TrainlyApp> createState() => _TrainlyAppState();
+  State<StrideApp> createState() => _StrideAppState();
 }
 
-class _TrainlyAppState extends State<TrainlyApp> {
+class _StrideAppState extends State<StrideApp> {
   @override
   void initState() {
     super.initState();
@@ -146,7 +146,7 @@ class _TrainlyAppState extends State<TrainlyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Trainly',
+      title: 'Stride',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,

@@ -1,7 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:trainly/models/training_type.dart';
-import 'package:trainly/models/time_slot.dart';
+import 'package:stride/models/training_type.dart';
+import 'package:stride/models/time_slot.dart';
 
 void main() {
   group('TrainingType', () {

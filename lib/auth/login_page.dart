@@ -70,7 +70,7 @@ class _LoginPageState extends State<LoginPage>
       } else {
         await supabase.auth.signInWithOAuth(
           OAuthProvider.google,
-          redirectTo: 'io.supabase.trainly://login-callback',
+          redirectTo: 'io.supabase.stride://login-callback',
           queryParams: {'prompt': 'select_account'},
         );
       }

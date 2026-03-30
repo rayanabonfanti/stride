@@ -524,7 +524,7 @@ class _ProfilePageState extends State<ProfilePage>
   void _showAboutDialog() {
     showAboutDialog(
       context: context,
-      applicationName: 'Trainly',
+      applicationName: 'Stride',
       applicationVersion: '1.0.0',
       applicationIcon: Icon(
         Icons.fitness_center,

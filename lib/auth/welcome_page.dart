@@ -126,7 +126,7 @@ class _WelcomePageState extends State<WelcomePage>
 
   Widget _buildTitle(ThemeData theme) {
     return Text(
-      'Trainly',
+      'Stride',
       style: theme.textTheme.displaySmall?.copyWith(
         fontWeight: FontWeight.bold,
         color: Colors.white,

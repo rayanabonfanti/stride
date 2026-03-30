@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:trainly/services/booking_service.dart';
+import 'package:stride/services/booking_service.dart';
 
 void main() {
   group('StudentBookingInfo', () {
@@ -13,6 +13,7 @@ void main() {
         classType: 'class',
         classStartTime: DateTime(2024, 1, 15, 8, 0),
         classEndTime: DateTime(2024, 1, 15, 9, 0),
+        classCapacity: 20,
         studentId: 'student-789',
         studentName: 'João Silva',
         studentEmail: 'joao@example.com',
@@ -46,6 +47,7 @@ void main() {
           classType: 'class',
           classStartTime: DateTime(2024, 3, 5, 8, 0),
           classEndTime: DateTime(2024, 3, 5, 9, 0),
+          classCapacity: 20,
           studentId: 'student-789',
           studentName: 'Test',
           studentEmail: 'test@example.com',
@@ -70,6 +72,7 @@ void main() {
           classType: 'class',
           classStartTime: DateTime(2024, 1, 15, 6, 5),
           classEndTime: DateTime(2024, 1, 15, 7, 30),
+          classCapacity: 20,
           studentId: 'student-789',
           studentName: 'Test',
           studentEmail: 'test@example.com',
@@ -90,6 +93,7 @@ void main() {
           classType: 'class',
           classStartTime: DateTime(2024, 1, 15, 8, 0),
           classEndTime: DateTime(2024, 1, 15, 9, 0),
+          classCapacity: 20,
           studentId: 'student-789',
           studentName: 'Test',
           studentEmail: 'test@example.com',
@@ -108,6 +112,7 @@ void main() {
           classType: 'class',
           classStartTime: DateTime(2024, 1, 15, 8, 0),
           classEndTime: DateTime(2024, 1, 15, 9, 0),
+          classCapacity: 20,
           studentId: 'student-789',
           studentName: 'Test',
           studentEmail: 'test@example.com',
@@ -130,6 +135,7 @@ void main() {
           classType: 'class',
           classStartTime: DateTime(2024, 1, 15, 8, 0),
           classEndTime: DateTime(2024, 1, 15, 9, 0),
+          classCapacity: 20,
           studentId: 'student-789',
           studentName: 'Test',
           studentEmail: 'test@example.com',

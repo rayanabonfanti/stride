@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:trainly/models/business_settings.dart';
+import 'package:stride/models/business_settings.dart';
 
 void main() {
   group('BusinessSettings', () {

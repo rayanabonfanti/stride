@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:trainly/models/user_profile.dart';
+import 'package:stride/models/user_profile.dart';
 
 void main() {
   group('UserProfile', () {

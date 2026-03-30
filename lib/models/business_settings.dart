@@ -41,12 +41,12 @@ class BusinessSettings {
 
   BusinessSettings({
     this.businessId,
-    this.cancellationDeadlineHours = 0, // Sem deadline - pode cancelar a qualquer momento
-    this.maxCancellationsPerMonth = 0,
-    this.cancellationLimitEnabled = false, // Limite desabilitado
-    this.maxBookingsPerWeek = 0,
-    this.bookingLimitEnabled = false, // Limite desabilitado
-    this.minBookingAdvanceHours = 0, // Sem antecedência mínima
+    this.cancellationDeadlineHours = 2,
+    this.maxCancellationsPerMonth = 2,
+    this.cancellationLimitEnabled = true,
+    this.maxBookingsPerWeek = 3,
+    this.bookingLimitEnabled = true,
+    this.minBookingAdvanceHours = 24,
     this.defaultClassCapacity = 10,
     this.defaultLanes = 4,
     List<ClassType>? classTypes,
@@ -54,16 +54,16 @@ class BusinessSettings {
     this.updatedBy,
   }) : classTypes = classTypes ?? ClassType.defaults;
 
-  /// Valores padrão - regras de negócio desabilitadas
+  /// Valores padrão
   factory BusinessSettings.defaults({String? businessId}) {
     return BusinessSettings(
       businessId: businessId,
-      cancellationDeadlineHours: 0, // Sem deadline
-      maxCancellationsPerMonth: 0,
-      cancellationLimitEnabled: false, // Desabilitado
-      maxBookingsPerWeek: 0,
-      bookingLimitEnabled: false, // Desabilitado
-      minBookingAdvanceHours: 0, // Sem antecedência
+      cancellationDeadlineHours: 2,
+      maxCancellationsPerMonth: 2,
+      cancellationLimitEnabled: true,
+      maxBookingsPerWeek: 3,
+      bookingLimitEnabled: true,
+      minBookingAdvanceHours: 24,
       defaultClassCapacity: 10,
       defaultLanes: 4,
       classTypes: ClassType.defaults,
@@ -73,12 +73,12 @@ class BusinessSettings {
   factory BusinessSettings.fromJson(Map<String, dynamic> json) {
     return BusinessSettings(
       businessId: json['business_id'] as String?,
-      cancellationDeadlineHours: json['cancellation_deadline_hours'] as int? ?? 0,
-      maxCancellationsPerMonth: json['max_cancellations_per_month'] as int? ?? 0,
-      cancellationLimitEnabled: json['cancellation_limit_enabled'] as bool? ?? false,
-      maxBookingsPerWeek: json['max_bookings_per_week'] as int? ?? 0,
-      bookingLimitEnabled: json['booking_limit_enabled'] as bool? ?? false,
-      minBookingAdvanceHours: json['min_booking_advance_hours'] as int? ?? 0,
+      cancellationDeadlineHours: json['cancellation_deadline_hours'] as int? ?? 2,
+      maxCancellationsPerMonth: json['max_cancellations_per_month'] as int? ?? 2,
+      cancellationLimitEnabled: json['cancellation_limit_enabled'] as bool? ?? true,
+      maxBookingsPerWeek: json['max_bookings_per_week'] as int? ?? 3,
+      bookingLimitEnabled: json['booking_limit_enabled'] as bool? ?? true,
+      minBookingAdvanceHours: json['min_booking_advance_hours'] as int? ?? 24,
       defaultClassCapacity: json['default_class_capacity'] as int? ?? 10,
       defaultLanes: json['default_lanes'] as int? ?? 4,
       classTypes: ClassType.fromJsonList(json['class_types'] as List<dynamic>?),

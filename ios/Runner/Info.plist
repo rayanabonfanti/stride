@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Trainly</string>
+	<string>Stride</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -15,7 +15,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>trainly</string>
+	<string>stride</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -28,10 +28,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>io.supabase.trainly</string>
+			<string>io.supabase.stride</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>io.supabase.trainly</string>
+				<string>io.supabase.stride</string>
 			</array>
 		</dict>
 	</array>
@@ -41,6 +41,13 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<!-- Permissões necessárias para image_picker (upload de foto de perfil) -->
+	<key>NSCameraUsageDescription</key>
+	<string>Precisamos de acesso à câmera para que você possa tirar uma foto de perfil.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Precisamos de acesso à galeria para que você possa escolher uma foto de perfil.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Acesso ao microfone não é utilizado neste app.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:trainly/core/input_validator.dart';
+import 'package:stride/core/input_validator.dart';
 
 void main() {
   group('InputValidator', () {

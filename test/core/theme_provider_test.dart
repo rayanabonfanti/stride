@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:trainly/core/theme_provider.dart';
+import 'package:stride/core/theme_provider.dart';
 
 void main() {
   group('AppColors', () {

@@ -1,4 +1,4 @@
-package com.trainly.app
+package com.stride.app
 
 import io.flutter.embedding.android.FlutterActivity
 

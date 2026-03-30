@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:trainly/services/admin_service.dart';
+import 'package:stride/services/admin_service.dart';
 
 void main() {
   group('UserProfile (AdminService)', () {

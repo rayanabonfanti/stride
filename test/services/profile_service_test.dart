@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:trainly/services/profile_service.dart';
+import 'package:stride/services/profile_service.dart';
 
 void main() {
   group('ProfileResult', () {

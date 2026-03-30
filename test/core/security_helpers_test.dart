@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:trainly/core/security_helpers.dart';
+import 'package:stride/core/security_helpers.dart';
 
 void main() {
   group('SecurityHelpers', () {

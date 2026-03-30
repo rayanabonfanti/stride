@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:trainly/widgets/skeleton_loading.dart';
+import 'package:stride/widgets/skeleton_loading.dart';
 
 void main() {
   group('SkeletonContainer', () {

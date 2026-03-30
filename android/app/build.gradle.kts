@@ -16,7 +16,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "com.trainly.app"
+    namespace = "com.stride.app"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -30,7 +30,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.trainly.app"
+        applicationId = "com.stride.app"
         minSdk = flutter.minSdkVersion  // Android 5.0+ (compatível com 98% dos dispositivos)
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode

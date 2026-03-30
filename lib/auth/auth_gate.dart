@@ -562,7 +562,7 @@ class _AuthGateState extends State<AuthGate> with SingleTickerProviderStateMixin
               ),
               const SizedBox(height: 24),
               Text(
-                'Trainly',
+                'Stride',
                 style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                       fontWeight: FontWeight.bold,
                       color: Colors.white,

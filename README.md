@@ -1,4 +1,4 @@
-# Trainly
+# Stride
 
 Sistema completo de gestão para academias, escolas de natação e centros de treinamento. Permite gerenciamento de aulas, reservas, check-in de alunos e controle de frequência com suporte a múltiplas empresas (multi-tenant).
 
@@ -21,7 +21,7 @@ Sistema completo de gestão para academias, escolas de natação e centros de tr
 
 ## Visão Geral
 
-O Trainly é um aplicativo Flutter multiplataforma (Android, iOS, Web, Desktop) que oferece:
+O Stride é um aplicativo Flutter multiplataforma (Android, iOS, Web, Desktop) que oferece:
 
 - **Multi-tenant**: Suporte a múltiplas empresas/academias
 - **Sistema de Membros**: Alunos solicitam acesso e admins aprovam
@@ -711,8 +711,8 @@ Configure secrets no repositório:
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/trainly.git
-cd trainly
+git clone https://github.com/seu-usuario/stride.git
+cd stride
 ```
 
 ### 2. Instale as dependências

@@ -1,4 +1,4 @@
-package com.stride.app
+package com.rbonfanti.stride
 
 import io.flutter.embedding.android.FlutterActivity
 

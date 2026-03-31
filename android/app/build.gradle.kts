@@ -16,7 +16,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "com.stride.app"
+    namespace = "com.rbonfanti.stride"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -30,7 +30,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.stride.app"
+        applicationId = "com.rbonfanti.stride"
         minSdk = flutter.minSdkVersion  // Android 5.0+ (compatível com 98% dos dispositivos)
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode

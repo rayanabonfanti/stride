@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -17,6 +19,7 @@ class _LoginPageState extends State<LoginPage>
   late AnimationController _animationController;
   late Animation<double> _fadeAnimation;
   late Animation<Offset> _slideAnimation;
+  StreamSubscription<AuthState>? _authSubscription;
 
   bool _isLoading = false;
   String? _errorMessage;
@@ -24,6 +27,11 @@ class _LoginPageState extends State<LoginPage>
   @override
   void initState() {
     super.initState();
+    _authSubscription = supabase.auth.onAuthStateChange.listen((data) {
+      if (data.session != null && mounted) {
+        Navigator.of(context).pop();
+      }
+    });
     _animationController = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 1000),
@@ -51,6 +59,7 @@ class _LoginPageState extends State<LoginPage>
 
   @override
   void dispose() {
+    _authSubscription?.cancel();
     _animationController.dispose();
     super.dispose();
   }

@@ -2,7 +2,6 @@
     <!-- Permissão de internet necessária para Supabase -->
     <uses-permission android:name="android.permission.INTERNET"/>
     <!-- Permissões necessárias para image_picker (upload de foto de perfil) -->
-    <uses-permission android:name="android.permission.CAMERA"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="29"/>
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>

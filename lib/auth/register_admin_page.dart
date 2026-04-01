@@ -60,18 +60,13 @@ class _RegisterAdminPageState extends State<RegisterAdminPage>
       final prefs = await SharedPreferences.getInstance();
       await prefs.setString(pendingRegistrationRoleKey, 'admin');
       
-      if (kIsWeb) {
-        await supabase.auth.signInWithOAuth(
-          OAuthProvider.google,
-          queryParams: {'prompt': 'select_account'},
-        );
-      } else {
-        await supabase.auth.signInWithOAuth(
-          OAuthProvider.google,
-          redirectTo: 'io.supabase.stride://login-callback',
-          queryParams: {'prompt': 'select_account'},
-        );
-      }
+      await supabase.auth.signInWithOAuth(
+        OAuthProvider.google,
+        redirectTo: kIsWeb
+            ? '${Uri.base.origin}/auth/callback'
+            : 'io.supabase.stride://login-callback',
+        queryParams: {'prompt': 'select_account'},
+      );
     } on AuthException catch (e) {
       setState(() {
         _errorMessage = 'Erro de autenticação: ${e.message}';

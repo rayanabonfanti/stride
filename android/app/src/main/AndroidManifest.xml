@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
     
     <application
-        android:label="stride"
+        android:label="Stride"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
